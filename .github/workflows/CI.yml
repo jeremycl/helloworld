@@ -42,5 +42,5 @@ jobs:
           # Artifact name
           name: jarpack
       - name: Build Docker image
-        run: docker build . --file Dockerfile --tag helloworld --build-arg JAR_FILE=$GITHUB_WORKSPACE/jarpack/*.jar
+        run: docker build . --file Dockerfile --tag helloworld --build-arg JAR_FILE=$GITHUB_WORKSPACE/*.jar
           
